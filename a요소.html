@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anchor태그</title>
+</head>
+<body>
+  <!--
+    문법
+    <a href="링크주소">텍스트 또는 이미지</a>
+
+    a태그의 href속성은 링크를 클릭하면 연결할 페이지나 사이트의 URL주소를 명시합니다.
+    a태그는 텍스트나 단락, 이미지 등 다양한 HTML요소에 사용할수 있습니다
+  -->
+  <a href="https://www.google.com" target="_blank">구글 사이트로 이동</a>
+  
+  <br>
+
+  <p>아래의 링크를 클릭하면 이 페이지의 다른 섹션으로 이동할 수 있습니다</p>
+  <a href="#link">링크 연습</a>
+
+  <h2>임시 링크</h2>
+  <p>"#+id"를 사용해서 같은 문서 내의 해당 요소로 이동하도록 하는 것</p>
+  <p>#으로 의미없는 링크를 주어 페이징이 안되도록 하는것</p>
+  <p><a href="#">임시 링크(클릭시 화면 최상단으로 이동)</a></p>
+
+  <h2>다운로드 링크</h2>
+  <p><a href="태그_모음과_특수_문자.pdf" download>파일 다운로드</a></p>
+
+  <h2>링크로 연결된 문서를 지정된 프레임(frame)에서 오픈</h2>
+  <p><a href="https://jmk255.github.io/example" target="myframe">
+    마이 홈페이지
+  </a></p>
+
+  <iframe name="myframe" width="500" height="500"></iframe>
+
+  <h2 id="link" style="margin:1000px 0;">링크 스타일링</h2>
+
+</body>
+</html>
