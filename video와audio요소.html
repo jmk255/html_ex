@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video, audio요소</title>
+</head>
+<body>
+  <!--
+    video요소 : 영상 파일을 표시한다.
+    브라우저가 모든 파일 형식을 지원하는 것은 아니므로 표준형식의 비디오 파일을 사용
+  -->
+    <video src="images/travel.mp4" controls width="360" height="250" poster="images/thumb.jpg" preload="auto" autoplay muted loop></video>
+    <!--
+• Poster 속성 : 비디오를 내려받기 하는 동안 사용자에게 지정된 이미지를 미리 보여준다.
+이 속성을 지정하지 않으면 비디오 파일의 첫 번째 프레임을 이미지 형식으로 보여준다.
+• height , width속성 :너비와 높이를 지정할 수 있다.
+• Autoplay속성 : 자동재생
+• loop속성 : 반복재생
+• controls속성 : 제어 컨트롤을 표시
+• Play : 파일재생
+• pause : 임시로 멈춤
+• volume : 소리 조절
+• muted 속성 : 소리없음
+• caption : 자막을 보이게 하거나 수화 정보를 선택하는 기능
+• playsinline : 모바일에서 강제 fullscreen 방지
+• Preload속성 : 비디오 파일의 사전 로딩을 지정한다.
+  문서 로딩과 동시에 비디오 파일을 로딩시킬 때 사용한다.
+  Autoplay 속성이 함께 지정되었다면 preload속성은 무시된다.
+    -->
+
+  <!--
+    audio요소 : 오디오 파일을 표시한다 
+    source요소 : 이 요소를 사용하면 하나의 audio, video요소에 여러개의 미디어 소스를 표시할 수 있다
+  -->
+  <audio controls preload="none">
+    <source src="images/bass.mp3" type="audio/mp3">
+    <source src="images/bass.ogg" type="audio/ogg">
+  </audio>
+  <!--
+  type 속성 : 미디어 파일의 MIME 종류를 지정한다.
+  비디오 파일 (type = "video/ogg" , "video/mp4" , "video/webm" )
+  오디오 파일 (type = "audio/ogg" , "audio/mp3")
+  -->
+</body>
+</html>
