@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영역만들기</title>
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    header, main, nav, footer{margin:auto;}
+  </style>
+</head>
+<body>
+  <header style="width:1000px; height:100px; background-color:pink;">헤더영역</header>
+  <nav style="width:1000px; height:50px; background-color:lightgreen;">내비게이션영역</nav>
+  <main style="width:1000px; background-color: gray;">
+    <aside style="width:300px; height:500px; background-color:skyblue; float:left;">사이드영역</aside>
+    <section style="width:700px; height:500px; background-color:coral; float:left;">섹션 영역(메인콘텐츠)</section>
+    <div style="clear:both;"></div>
+  </main>
+  <footer style="width:1000px; height:50px; background-color:black; color:white;">
+    푸터 영역
+  </footer>
+</body>
+</html>
